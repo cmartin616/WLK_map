@@ -1,0 +1,134 @@
+{
+  "type": "FeatureCollection",
+  "features": [{
+    "type": "Feature",
+    "properties": {
+      "name": "New York City, NY",
+      "date": "1/15",
+      "notes": "This is where NYC is!",
+      "pictures": "link",
+      "thumbnail": "nyc.jpg"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-73.985428, 40.748817]
+    }
+  }, {
+    "type": "Feature",
+    "properties": {
+      "name": "Baltimore, MD",
+      "date": "3/20/15",
+      "notes": "This is where Baltimore is!",
+      "pictures": "link",
+      "thumbnail": "nyc.jpg"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-76.6167, 39.2833]
+    }
+  }, {
+    "type": "Feature",
+    "properties": {
+      "name": "Saint Paul, MN",
+      "date": "All the time!",
+      "notes": "This is where Saint Paul is!",
+      "pictures": "link",
+      "thumbnail": "nyc.jpg"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-93.0936, 44.9442]
+    }
+  }, {
+    "type": "Feature",
+    "properties": {
+      "name": "Grand Marais, MN",
+      "date": "10/14",
+      "notes": "This is where Grand Marais is!",
+      "pictures": "/grandmarais/",
+      "thumbnail": "/grandmarais/4.jpg"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-90.3331, 47.7492]
+    }
+  }, {
+    "type": "Feature",
+    "properties": {
+      "name": "Stillwater, MN",
+      "date": "9/14",
+      "notes": "This is where Stillwater is!",
+      "pictures": "/stillwater/",
+      "thumbnail": "/stillwater/2.jpg"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-92.8167, 45.0500]
+    }
+  }, {
+    "type": "Feature",
+    "properties": {
+      "name": "Albany, NY",
+      "date": "12/14",
+      "notes": "This is where Albany is!",
+      "pictures": "link",
+      "thumbnail": "nyc.jpg"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-73.7572, 42.6525]
+    }
+  },{
+    "type": "Feature",
+    "properties": {
+      "name": "Burlington, VT",
+      "date": "12/14",
+      "notes": "This is where Burlington is!",
+      "pictures": "link",
+      "thumbnail": "nyc.jpg"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-73.2119, 44.4758]
+    }
+  }, {
+    "type": "Feature",
+    "properties": {
+      "name": "Vienna, VA",
+      "date": "3/13/15-3/21/15",
+      "notes": "This is where Vienna is!",
+      "pictures": "link",
+      "thumbnail": "nyc.jpg"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-77.2667, 38.9000]
+    }
+  },{
+    "type": "Feature",
+    "properties": {
+      "name": "Williamsburg, VA",
+      "date": "3/15/15",
+      "notes": "This is where Williamsburg is!",
+      "pictures": "link",
+      "thumbnail": "nyc.jpg"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-76.7069, 37.2708]
+    }
+  },{
+    "type": "Feature",
+    "properties": {
+      "name": "Washington, DC",
+      "date": "3/20/15",
+      "notes": "This is where DC is!",
+      "pictures": "link",
+      "thumbnail": "nyc.jpg"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-77.0164, 38.9047]
+    }
+  }]
+}
