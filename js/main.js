@@ -1,20 +1,20 @@
 require([
-  // './lib/jquery.min.js',
-  // './lib/bootstrap.min.js',
   'jquery',
-  // 'js/data',
   'js/trips',
   'js/states',
-  // 'js/icons',
+  'js/data',
+  'js/calculate',
   'bootstrap'
 
 
 ], function(
-  $, trips, states
+  $, trips, states, data, calculate
   // data, icons
   ){
 
     app = {};
+
+    console.log(calculate.calculateDistance(data.wolftrapCoords, data.scotiaCoords));
 
     function style(feature) {
       return {
@@ -105,7 +105,7 @@ require([
       // console.log(data)
       layer = L.geoJson(data, {
         style: style
-      }).addTo(map);
+      }).setZIndex(0).addTo(map);
       // .bindPopup('test');
     });
     // $.getJSON('assets/json/places.json', function(data) {

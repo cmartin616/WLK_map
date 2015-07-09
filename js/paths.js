@@ -1,10 +1,11 @@
 /* global define, app*/
 define([
-  'js/data'
+  'js/data',
+  'js/calculate'
   ],
 
   function(
-    data
+    data, calculate
   ) {
 
     function createLine(pointList, options){
@@ -12,8 +13,11 @@ define([
         color: options.color,
         weight: options.weight,
         opacity: 1,
-        smoothFactor: 1
+        smoothFactor: 1,
+        bindPopup: calculate.calculateDistance(pointList[0], pointList[1])
         });
+
+      console.log(line);
       return line;
     }
 
