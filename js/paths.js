@@ -17,7 +17,6 @@ define([
         bindPopup: calculate.calculateDistance(pointList[0], pointList[1])
         });
 
-      console.log(line);
       return line;
     }
 
@@ -34,13 +33,13 @@ define([
                   weight: 10
                 };
 
-    console.log(data.albanyAirportCoords, data.reaganAirportCoords);
-
   return {
 
     /* DRIVE PATHS */
 
-    binghamtonToVienna: createLine([data.binghamtonCoords, data.wolftrapCoords], drive),
+    binghamtonToVienna: createLine([data.binghamtonCoords, data.wolftrapCoords], drive, 3),
+
+    danversToLogan: createLine([data.danversCoords, data.loganAirportCoords], drive, 3),
 
     denverToOgallala: createLine([data.denverAirportCoords, data.ogallalaCoords], drive, 3),
 
@@ -55,6 +54,8 @@ define([
     viennaToDulles: createLine([data.wolftrapCoords, data.dullesAirportCoords], drive, 3),
 
     wyomissingToBinghamton: createLine([data.wyomissingCoords, data.binghamtonCoords], drive, 3),
+
+    philadelphiaToDelco: createLine([data.philadelphiaAirportCoords, data.mediaCoords], drive, 3),
     
     
     
@@ -67,6 +68,7 @@ define([
     albanyToReaganFlight: createLine([data.albanyAirportCoords, data.reaganAirportCoords], flight, 3),
     charlotteToPhoenixFlight: createLine([data.charlotteAirportCoords, data.phoenixAirportCoords], flight, 3),
     dullesToDenverFlight: createLine([data.dullesAirportCoords, data.denverAirportCoords], flight, 3),
+    logantoPhiladelphiaFlight: createLine([data.loganAirportCoords, data.philadelphiaAirportCoords], flight, 3),
     philadelphiaToAlbanyFlight: createLine([data.philadelphiaAirportCoords, data.albanyAirportCoords], flight, 3),
     phoenixToPhiladelphiaFlight: createLine([data.phoenixAirportCoords, data.philadelphiaAirportCoords], flight, 3),
     phoenixToPhiladelphiaReturnFlight: createLine([data.phoenixAirportCoords, data.philadelphiaAirportCoords], 'green', 10),
