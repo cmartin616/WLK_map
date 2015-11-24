@@ -13,12 +13,14 @@ define([
       /* HOME LOCATIONS */
       scotia: L.marker(data.scotiaCoords, {icon: icons.dogIcon}),
       wolftrap: L.marker(data.wolftrapCoords, {icon: icons.homeIcon}),
+      danvers: L.marker(data.danversCoords, {icon: icons.homeIcon}),
 
       /* AIRPORTS */
       albanyAirport: L.marker(data.albanyAirportCoords, {icon: icons.airportIcon}),
       charlotteAirport: L.marker(data.charlotteAirportCoords, {icon: icons.airportIcon}),
       denverAirport: L.marker(data.denverAirportCoords, {icon: icons.airportIcon}),
       dullesAirport: L.marker(data.dullesAirportCoords, {icon: icons.airportIcon}),
+      loganAirport: L.marker(data.loganAirportCoords, {icon: icons.airportIcon}),
       ontarioAirport: L.marker(data.ontarioAirportCoords, {icon: icons.airportIcon}),
       phoenixAirport: L.marker(data.phoenixAirportCoords, {icon: icons.airportIcon}),
       pittsburghAirport: L.marker(data.pittsburghAirportCoords, {icon: icons.airportIcon}),
@@ -28,6 +30,7 @@ define([
       /* WORK LOCATIONS */
       esriRedlands: L.marker(data.esriRedlandsCoords, {icon: icons.workIcon}),
       cnppidOgallala: L.marker(data.ogallalaCoords, {icon: icons.workIcon}),
+      delcoMedia: L.marker(data.mediaCoords, {icons: icons.workIcon}),
       ugiesWyomissing: L.marker(data.wyomissingCoords, {icon: icons.workIcon}),
       spcPittsburgh: L.marker(data.spcCoords, {icon: icons.workIcon}),
       
