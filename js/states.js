@@ -10,7 +10,8 @@ define({
       'Nebraska',
       'North Carolina',
       'Pennsylvania',
-      'Virginia',
+      'South Dakota',
+      'Virginia'
       ]
     
 });

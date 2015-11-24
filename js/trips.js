@@ -14,9 +14,6 @@ define([
       });
     }
 
-    console.log(paths.reaganToPittsburgFlight);
-    console.log(paths.albanyToPittsburghFlight);
-
     var redlandsTraining1 = L.featureGroup();
     var redlandsTraining1_features = [
                             markers.wolftrap,
@@ -77,10 +74,22 @@ define([
                               markers.cnppidOgallala
                               ];
 
+    var wlkDELCO = L.featureGroup();
+    var wlkDELCO_features = [
+                            markers.danvers,
+                            paths.danversToLogan,
+                            markers.loganAirport,
+                            paths.logantoPhiladelphiaFlight,
+                            markers.philadelphiaAirport,
+                            paths.philadelphiaToDelco,
+                            markers.delcoMedia
+                            ];
+
     addToFeatureGroup(redlandsTraining1_features, redlandsTraining1);
     addToFeatureGroup(wlkUgies_features, wlkUgies);
     addToFeatureGroup(wlkSPC_features, wlkSPC);
     addToFeatureGroup(wlkCNPPID_features, wlkCNPPID);
+    addToFeatureGroup(wlkDELCO_features, wlkDELCO);
 
     return {
      
@@ -90,7 +99,9 @@ define([
       
       wlkSPC: wlkSPC,
 
-      wlkCNPPID: wlkCNPPID
+      wlkCNPPID: wlkCNPPID,
+
+      wlkDELCO: wlkDELCO
 
   };
 });

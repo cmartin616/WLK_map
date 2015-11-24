@@ -14,7 +14,7 @@ require([
 
     app = {};
 
-    console.log(calculate.calculateDistance(data.wolftrapCoords, data.scotiaCoords));
+    // console.log(calculate.calculateDistance(data.wolftrapCoords, data.scotiaCoords));
 
     function style(feature) {
       return {
@@ -56,50 +56,19 @@ require([
       
       'CNPPID - WLK': trips.wlkCNPPID,
       'UGIES - WLK': trips.wlkUgies,
-      'SPC - WLK': trips.wlkSPC
+      'SPC - WLK': trips.wlkSPC,
+      'DelCO - WLK': trips.wlkDELCO
     };
 
     var map = L.map('map', {
       center: [39.8282, -98.5795],
       zoom: 5,
-      layers: [basemap, trips.redlandsTraining1]
+      layers: [basemap, trips.wlkDELCO]
     });
 
     app.map = map;
 
     L.control.layers(baseMaps, overlayMaps).addTo(map);
-
-    // scotia.addTo(map);
-
-    // var statesVisited = [
-
-    //   'California',
-    //   'Colorado',
-    //   'Massachusetts',
-    //   'New York',
-    //   'Nebraska',
-    //   'Pennsylvania',
-    //   'Virginia',
-    //   ];
-
-    
-    // map.on('overlayadd', function(layer){
-    //   var layerName = layer.name;
-    //   console.log(overlayMaps[layerName].getBounds());
-    //   map.fitBounds(overlayMaps[layerName].getBounds());
-    //   console.log(overlayMaps[layerName]);
-
-    //   // overlayMaps[layerName].clearLayers();
-  
-    //   $.each(layer.layers, function(index, layer){
-    //     console.log(layer);
-    //     map.removeLayer(layer);
-    //   });
-    // });
-    
-    
-
-    
 
     $.getJSON('assets/json/states.json', function(data) {
       // console.log(data)
@@ -108,16 +77,7 @@ require([
       }).setZIndex(0).addTo(map);
       // .bindPopup('test');
     });
-    // $.getJSON('assets/json/places.json', function(data) {
-    //   layer = L.geoJson(data, {
-    //     onEachFeature: createPlacePopup
-    //   }).addTo(map);
-    //   // .bindPopup('test');
-    // });
 
-    
-
-  
 });
 
 
